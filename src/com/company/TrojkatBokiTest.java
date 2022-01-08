@@ -45,4 +45,17 @@ class TrojkatBokiTest {
         TrojkatBoki trojkatBoki = new TrojkatBoki(3, -5, -4);
         Assertions.assertEquals(6, trojkatBoki.obliczPole());
     }
+
+    @Test
+    void trzeciBokNieMozeBycDluzszyOdDwochPozostalych() {
+        TrojkatBoki trojkatBoki = new TrojkatBoki(3, 4, 8);
+        Assertions.assertEquals(7, trojkatBoki.getBokC());
+
+        TrojkatBoki trojkatBoki1 = new TrojkatBoki(3, 8, 4);
+        Assertions.assertEquals(7, trojkatBoki1.getBokB());
+
+        TrojkatBoki trojkatBoki2 = new TrojkatBoki(8, 3, 4);
+        Assertions.assertEquals(7, trojkatBoki2.getBokA());
+
+    }
 }

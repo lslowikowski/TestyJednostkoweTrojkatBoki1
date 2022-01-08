@@ -9,6 +9,9 @@ public class TrojkatBoki {
         setBokA(bokA);
         setBokB(bokB);
         setBokC(bokC);
+        if(bokA > this.bokB + this.bokC) this.bokA = this.bokB + this.bokC;
+        if(bokB > this.bokA + this.bokC) this.bokB = this.bokA + this.bokC;
+        if(bokC > this.bokA + this.bokB) this.bokC = this.bokA + this.bokB;
     }
 
     public float getBokA() {
@@ -18,6 +21,7 @@ public class TrojkatBoki {
     public void setBokA(float bokA) {
         if(bokA >= 0) this.bokA = bokA;
         else this.bokA = -bokA;
+
     }
 
     public float getBokB() {
@@ -27,6 +31,7 @@ public class TrojkatBoki {
     public void setBokB(float bokB) {
         if(bokB >= 0) this.bokB = bokB;
         else this.bokB = -bokB;
+
     }
 
     public float getBokC() {
@@ -36,6 +41,7 @@ public class TrojkatBoki {
     public void setBokC(float bokC) {
         if(bokC >= 0) this.bokC = bokC;
         else this.bokC = -bokC;
+
     }
 
     public float obliczObwod(){
