@@ -26,7 +26,7 @@ public class TrojkatBoki {
 
     public void setBokB(float bokB) {
         if(bokB >= 0) this.bokB = bokB;
-        this.bokB = -bokB;
+        else this.bokB = -bokB;
     }
 
     public float getBokC() {
@@ -35,7 +35,7 @@ public class TrojkatBoki {
 
     public void setBokC(float bokC) {
         if(bokC >= 0) this.bokC = bokC;
-        this.bokC = -bokC;
+        else this.bokC = -bokC;
     }
 
     public float obliczObwod(){
